@@ -1,0 +1,29 @@
+.menu-page {
+    width: 100vw;
+    height: 100vh;
+    padding: 1em 3em;
+
+    h1 {
+        text-align: center;
+        margin: 1em;
+    }
+
+    .menu-items {
+        display: flex;
+        justify-content: space-around;
+        height: 600px;
+        align-items: center;
+
+        .menu-list-items {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            line-height: 180%;
+            width: 20rem;
+
+            .text {
+                text-decoration-style: dotted;
+            }
+        }
+    }
+}

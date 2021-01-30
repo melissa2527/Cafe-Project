@@ -1,0 +1,40 @@
+.background {
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    box-shadow: 0 4px 2px 2px rgba(0,0,0,.2);
+
+    @media only screen and (max-width: 767px) {
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            margin: 0 auto;
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+        h1 {
+            font-size: 4.5rem;
+        }
+    }
+
+    img {
+        width: 100vw;
+        max-height: 90vh;
+        position: relative;
+        box-shadow: 3px 3px solid rgba(0,0,0,.2);
+    }
+        h1 {
+            color: whitesmoke;
+            text-shadow: 1px 5px 2px black;
+            padding: 1em;
+            text-align: center;
+            z-index: 100;
+            position: absolute;
+        }
+    
+        
+
+}
