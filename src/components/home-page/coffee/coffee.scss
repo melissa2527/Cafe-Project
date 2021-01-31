@@ -54,6 +54,7 @@
     border-radius: 10px;
 }
 
+
 .right-arrow {
     position: absolute;
     top: 40%;
@@ -76,3 +77,11 @@
     border: none;
 }
 
+@media only screen and (max-width: 800px) {
+    .right-arrow {
+        right: 2px;
+    }
+    .left-arrow {
+        left: 2px;
+    }
+}
