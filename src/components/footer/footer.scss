@@ -27,7 +27,11 @@
          color: whitesmoke;
 
          &:hover {
-             color: rgb(228, 220, 106);
+            color: lightblue;
+            cursor: pointer;
+            opacity: 1;
+            transition: 0.3s;
+            font-size: 120%;
          }
      }
 }

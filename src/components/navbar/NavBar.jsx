@@ -8,11 +8,11 @@ const NavBar = ({amount}) => {
     return (
         <div className="NavBar-container">
             <div className="navbar"> 
-                <Link to="/">Home</Link> 
-                <Link to="/coffee">Coffee</Link>
-                <Link to='/menu'>Menu</Link>
-                <Link to="/aboutus">About Us</Link>
-                <span className='cart-show'>
+                <Link to="/" className='link'>Home</Link> 
+                <Link to="/coffee" className='link'>Coffee</Link>
+                <Link to='/menu' className='link'>Menu</Link>
+                <Link to="/aboutus" className='link'>About Us</Link>
+                <span className='cart-show link'>
                 <Link to="/cart"><i className="fas fa-shopping-cart"></i></Link>
                 <span className='amount-container'> 
                 <p className='total-amount'>0</p>
