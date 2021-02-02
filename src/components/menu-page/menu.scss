@@ -1,9 +1,24 @@
-@media only screen and (max-width: 700px) {
-//     img {
-//         visibility: hidden; 
-//     }
-    .menu-list-items {
-        font-size: 0.8rem;
+@media only screen and (max-width: 740px) {
+    // img {
+    //     visibility: hidden; 
+    // }
+    // .menu-list-items {
+    //     font-size: 0.8rem;
+    //     margin: 0 auto;
+    //     position: absolute;
+    // }
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 200px;
+            margin-top: 3.5em;
+        }
+
+        .menu-list-items {
+            font-size: 1em;
+        }
     }
 }
 
@@ -22,6 +37,10 @@
         justify-content: space-around;
         height: 600px;
         align-items: center;
+
+        img {
+            margin-bottom: 2em;
+        }
 
         .menu-list-items {
             display: flex;
