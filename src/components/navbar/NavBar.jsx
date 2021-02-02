@@ -12,12 +12,12 @@ const NavBar = ({amount}) => {
                 <Link to="/coffee" className='link'>Coffee</Link>
                 <Link to='/menu' className='link'>Menu</Link>
                 <Link to="/aboutus" className='link'>About Us</Link>
-                <span className='cart-show link'>
+                {/* <span className='cart-show link'>
                 <Link to="/cart"><i className="fas fa-shopping-cart"></i></Link>
                 <span className='amount-container'> 
-                <p className='total-amount'>0</p>
-            </span>
-            </span>
+                <p className='total-amount'>0</p> */}
+            {/* </span>
+            </span> */}
             </div>
         </div>
     )

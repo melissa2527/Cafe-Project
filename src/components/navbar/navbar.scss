@@ -1,15 +1,3 @@
-@media only screen and (max-width: 700px) {
-    .navbar-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .link {
-        font-size: 0.7em;
-        padding: auto;
-    }
-}
-
 .navbar-container {
     width: 100vw;
     height: 10vh;
@@ -53,4 +41,16 @@
 .cart-show {
     margin-right: 1em;
     display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .link {
+        font-size: 0.7em;
+        padding: auto;
+    }
 }

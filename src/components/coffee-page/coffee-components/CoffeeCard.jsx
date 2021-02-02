@@ -29,7 +29,7 @@ export const CoffeeCard = ({coffee}) => {
                 <div>
                     <Like />
                     <div className='button'>
-                        <button>Buy</button>
+                        {/* <button>Buy</button> */}
                     </div>
                 </div>
             </div>
