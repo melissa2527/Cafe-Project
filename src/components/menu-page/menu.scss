@@ -14,7 +14,8 @@
 
         img {
             width: 200px;
-            margin-top: 3.5em;
+            // min-height: 350px;
+            margin-top: 7em;
         }
 
         .menu-list-items {
@@ -39,6 +40,10 @@
         height: 600px;
         align-items: center;
         margin-bottom: 2em;
+
+        img {
+            min-height: 350px;
+        }
 
         .menu-list-items {
             display: flex;
