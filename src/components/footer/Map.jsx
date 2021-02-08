@@ -8,9 +8,10 @@ class MapItem extends Component{
 render() {
     return (
         <div style={{
-                position: "relative",
-                width: "20%",
-                height: "300px"}} 
+            position: "absolute",
+            left: '20%',
+            width: "25%",
+            height: "300px"}} 
             className="map">
 
             <Map google={this.props.google} 
