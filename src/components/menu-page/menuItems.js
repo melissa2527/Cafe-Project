@@ -1,4 +1,5 @@
-const menuItems = [
+const menuItems = 
+[
                 {   name: 'Espresso',
                     price: '$2.50'
                 },
