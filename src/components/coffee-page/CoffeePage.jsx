@@ -14,8 +14,8 @@ export const CoffeePage = () => {
             <div className='coffee-section'>
                 {coffeeItems.map(coffee => {
                   return (
-                        <div>
-                        <CoffeeCard key={coffee.id} coffee={coffee} />
+                        <div key={coffee.id}>
+                        <CoffeeCard coffee={coffee} />
                         </div>
                     )
                 })}
