@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './footer.scss';
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
+import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import REACT_APP_GOOGLE_MAPS_API_KEY from '../../config.js';
 
 class MapItem extends Component{
 
@@ -23,5 +24,5 @@ render() {
 
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyA9Eg0cXQUEzs6aA-0oOVmcrXW38HINliQ'
+    apiKey: REACT_APP_GOOGLE_MAPS_API_KEY
 })(MapItem);
