@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './aboutus.scss';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-export const aboutUsPage = () => {
+export const AboutUsPage = () => {
+
+    useEffect(() => {
+        Aos.init({duration: 1500})
+    }, [])
+
     return (
         <div className='about-us-container'>
            <h1 className='title'>About Us</h1>
@@ -9,7 +16,7 @@ export const aboutUsPage = () => {
            <div className='content'>
 
                 <div className='story-container'>
-                    <div className='story-text'>
+                    <div className='story-text' data-aos='fade-right'>
                     <h4>Our Story</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit eveniet aperiam amet sit earum, animi est laudantium quisquam quos eligendi voluptatibus architecto, repudiandae provident accusantium nesciunt quae magni? Aut, blanditiis.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laudantium exercitationem aspernatur sapiente eius ab soluta tempora atque enim quae.</p>
@@ -19,7 +26,7 @@ export const aboutUsPage = () => {
                 </div>
 
 
-                <div className='video-container'>
+                <div className='video-container' data-aos='fade-left'>
                     <h4>Coffee Basics</h4>
                     <iframe width="600" height="415" title='coffee-video'
                     src="https://www.youtube.com/embed/vFcS080VYQ0?autoplay=1&mute=1">

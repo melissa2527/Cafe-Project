@@ -4,6 +4,7 @@ import MapItem from './Map.jsx';
 import './footer.scss';
 
 export const Footer = () => {
+
     return (
         <div className='find-us'>
             <h2>Find Us</h2>
