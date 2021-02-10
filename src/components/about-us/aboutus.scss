@@ -1,0 +1,36 @@
+.about-us-container {
+    margin: 3em;
+
+    .title {
+        height: 20vh;
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+
+    .story-container {
+        width: 600px;
+        padding: 0 1em;
+        box-shadow: 5px 5px brown;
+        // background-image: url('img/espresso-machine-detail.jpg');
+    }
+
+    .story-text {
+        padding: 1em;
+    }
+
+    .video-container {
+        width: 600px;
+        
+        h4 {
+            margin: 1em;
+        }
+    }
+}
+
