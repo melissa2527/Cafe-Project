@@ -4,7 +4,7 @@ import NavBar from "./components/navbar/NavBar.jsx";
 import {Route, Switch} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {CoffeePage} from './components/coffee-page/CoffeePage.jsx';
-import {AboutUsPage} from './components/about-us-page/AboutUsPage.jsx';
+// import {AboutUsPage} from './components/about-us-page/AboutUsPage.jsx';
 import {Menu} from './components/menu-page/Menu.jsx';
 import {Footer} from './components/footer/Footer.jsx';
 
@@ -20,7 +20,7 @@ const App = () => {
         {/* <Route path='/cart' component={CartContainer}/> */}
         <Route path="/coffee" component={CoffeePage} />
         <Route path='/menu' component={Menu}/>
-        <Route path='/aboutus' component={AboutUsPage} />
+        {/* <Route path='/aboutus' component={AboutUsPage} /> */}
       </Switch>
       <Footer />
       </div>
