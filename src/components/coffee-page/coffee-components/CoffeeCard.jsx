@@ -1,14 +1,9 @@
 import React from 'react';
-import Like from './Like.jsx';
+import {Like} from './Like.jsx';
 import Info from './Info.jsx';
-// import zoomClick from './zoomClick.jsx';
-
-
 
 
 export const CoffeeCard = ({coffee}) => {
-    // const [isZoomed, setIsZoomed] = useState(false);
-   
 
     return (
         <div className='coffee-card'>
@@ -27,7 +22,7 @@ export const CoffeeCard = ({coffee}) => {
                 </div>
                 
                 <div>
-                    <Like />
+                    <Like name={coffee.name}/>
                     <div className='button'>
                         {/* <button>Buy</button> */}
                     </div>

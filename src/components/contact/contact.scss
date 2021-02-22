@@ -1,7 +1,45 @@
 .contact-container {
     height: 100vh;
+    margin: 3rem;
 
     h1 {
-        font-size: 2rem;
+        // height: 17vh;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+        margin: 2rem auto 0 auto;
+    }
+    
+    label {
+        font-size: 140%;
+        font-weight: 700;
+        margin-top: 1rem;
+    }
+    
+    button {
+        margin: 3rem auto 0 auto;
+        width: 200px;
+        padding: 5px;
+        border-radius: 15px;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            transition: 0.5s ease-in-out;
+            background: lightblue;
+            font-weight: 700;
+            transform: scale(1.2);
+        }
+    }
+
+    .success {
+        text-align: center;
+        background: lightgreen;
+        font-weight: 700;
+        padding: 10px;
     }
 }

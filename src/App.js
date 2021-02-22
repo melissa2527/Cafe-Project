@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from "./components/home-page/Home.jsx";
 import NavBar from "./components/navbar/NavBar.jsx";
-import {Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {CoffeePage} from './components/coffee-page/CoffeePage.jsx';
 import {AboutUsPage} from './components/about-us/AboutUsPage.jsx';
@@ -13,7 +13,7 @@ import {Contact} from './components/contact/Contact.jsx';
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <NavBar />
       <Switch>
         <Route exact path="/" component={Home}/>
@@ -24,7 +24,7 @@ const App = () => {
         <Route path='/contact' component={Contact} />
       </Switch>
       <Footer />
-      </div>
+    </Router>
     
   )
 }

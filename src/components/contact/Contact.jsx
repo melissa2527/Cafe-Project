@@ -1,6 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './contact.scss';
 import {db} from '../../firebase';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export const Contact = () => {
     const [name, setName] = useState('');
@@ -25,7 +27,7 @@ export const Contact = () => {
             // setLoader(false);
         })
         .catch(error => {
-            alert(error.message);
+            console.error('Error', error);
             setErrorMsg(true);
             // setLoader(false);
         });
@@ -35,16 +37,20 @@ export const Contact = () => {
         
     }
 
+    useEffect(() => {
+        Aos.init({duration: 1000});
+    }, []);
+
     return (
         <div className='contact-container'>
-            <h1>Contact Us</h1>
+            <h1 data-aos='fade-down'>Contact Us</h1>
             {
-                successMsg ? 'Your message has been submitted!  Have a caffeinated day' : 
-                errorMsg ? 'There was an error. Please try again or call us.' : null
+                successMsg ? <div className='success'>Your message has been submitted!  Have a caffeinated day ☕</div> : 
+                errorMsg ? <div className='error'>There was an error. Please try again or call us.</div> : null
             }
-            <form className='contact-form' onSubmit={handleSubmit}>
+            <form className='contact-form' onSubmit={handleSubmit} data-aos='fade-up'>
                 <label>Name</label>
-                <input type='text' value={name} onChange={(e) => setName(e.target.value)} placeholder='name'required/>
+                <input type='text' value={name} min-length='3' onChange={(e) => setName(e.target.value)} placeholder='name'required/>
 
                 <label>Email</label>
                 <input type='text' value={email} onChange={(e) => setEmail(e.target.value)} id='email' placeholder='email'required/>

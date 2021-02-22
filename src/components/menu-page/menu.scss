@@ -1,12 +1,4 @@
 @media only screen and (max-width: 740px) {
-    // img {
-    //     visibility: hidden; 
-    // }
-    // .menu-list-items {
-    //     font-size: 0.8rem;
-    //     margin: 0 auto;
-    //     position: absolute;
-    // }
     .menu-items {
         display: flex;
         flex-direction: column;
@@ -26,12 +18,14 @@
 
 .menu-page {
     width: 100vw;
-    // height: 100vh;
-    padding: 1em 3em;
+    height: 100vh;
+    padding: 1rem 3rem;
 
     h1 {
         text-align: center;
-        margin: 1em;
+        margin: 1rem;
+        font-size: 50px;
+        height: 17vh;
     }
 
     .menu-items {
