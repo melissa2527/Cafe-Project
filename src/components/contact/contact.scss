@@ -13,6 +13,8 @@
         flex-direction: column;
         max-width: 800px;
         margin: 2rem auto 0 auto;
+        padding: 20px;
+        box-shadow: 2px 2px 2px  rgb(43, 3, 13);
     }
     
     label {
@@ -46,4 +48,55 @@
         font-weight: 700;
         padding: 10px;
     }
+}
+
+.sidebar {
+    position: fixed;
+    z-index: 1;
+    width: 350px;
+    height: 100%;
+    background: transparent;
+    display: grid;
+    align-items: center;
+    top: 0;
+    transition: 0.3s ease-in-out;
+
+    .sidebar-menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 100px);
+        text-align: center;
+        background-color: #ffc500;
+        height: 100vh;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        text-decoration: none;
+        list-style: none;
+        margin: 4em auto;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        color: #000;
+
+        &:hover {
+            color: #e31837;
+            transition: 0.2s ease-in-out;
+            transform: scale(1.2);
+        }
+    }
+}
+
+.fa-coffee {
+    display: block;
+    position: absolute;
+    left: 50px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 2rem;
+    transform: rotate(-45deg);
+
 }

@@ -3,11 +3,13 @@ import './contact.scss';
 import {db} from '../../firebase';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import {Sidebar} from './Sidebar.jsx';
 
 export const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [isOpen, setIsOpen] = useState(false);
     // const [loading, setLoading] = useState(false);
     const [successMsg, setSuccessMsg] = useState(false);
     const [errorMsg, setErrorMsg] = useState(false);
@@ -37,12 +39,19 @@ export const Contact = () => {
         
     }
 
+    const toggle = () => {
+        setIsOpen(!isOpen);
+    }
+
     useEffect(() => {
         Aos.init({duration: 1000});
     }, []);
 
     return (
         <div className='contact-container'>
+            <i className='fas fa-coffee' onClick={toggle}>
+                <Sidebar isOpen={isOpen} toggle={toggle} />
+            </i>
             <h1 data-aos='fade-down'>Contact Us</h1>
             {
                 successMsg ? <div className='success'>Your message has been submitted!  Have a caffeinated day ☕</div> : 
