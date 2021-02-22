@@ -49,9 +49,11 @@ export const Contact = () => {
 
     return (
         <div className='contact-container'>
-            <i className='fas fa-coffee' onClick={toggle}>
+            {/* <i className='fas fa-coffee' onClick={toggle}>
                 <Sidebar isOpen={isOpen} toggle={toggle} />
-            </i>
+            </i> */}
+            <i className='fas fa-coffee' toggle={toggle}></i>
+            <Sidebar isOpen={isOpen} toggle={toggle} />
             <h1 data-aos='fade-down'>Contact Us</h1>
             {
                 successMsg ? <div className='success'>Your message has been submitted!  Have a caffeinated day ☕</div> : 

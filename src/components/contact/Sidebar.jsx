@@ -3,9 +3,9 @@ import './contact.scss';
 
 export const Sidebar = ({isOpen, toggle}) => {
     return (
-        <div className='sidebar' style={{left: isOpen ? 50 : -1000}}>
+        <div className='sidebar' style={{left: isOpen ? 350 : -350}}>
             
-            <i class="fas fa-times" onClick={toggle}></i>
+            <i class="fas fa-times" toggle={toggle}></i>
             <div className='sidebar-menu'>
                 <p className='item'>One</p>
                 <p className='item'>Two</p>
