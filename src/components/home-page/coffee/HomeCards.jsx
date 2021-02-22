@@ -20,8 +20,8 @@ export const HomeCards = () => {
             <h3>Our Coffee</h3>
             {/* <Link to='/coffee' id='link-coffee'> <i class="fas fa-arrow-right"></i></Link> */}
             
-            <button onClick={prevPicture} className='left-arrow'><i class="fas fa-arrow-left"></i></button>
-            <button onClick={nextPicture} className='right-arrow'><i class="fas fa-arrow-right"></i></button>
+            <button onClick={prevPicture} className='left-arrow'><i className="fas fa-arrow-left"></i></button>
+            <button onClick={nextPicture} className='right-arrow'><i className="fas fa-arrow-right"></i></button>
 
             {coffeeItems.map((image, index) => {
                 return (

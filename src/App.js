@@ -7,7 +7,7 @@ import {CoffeePage} from './components/coffee-page/CoffeePage.jsx';
 import {AboutUsPage} from './components/about-us/AboutUsPage.jsx';
 import {Menu} from './components/menu-page/Menu.jsx';
 import {Footer} from './components/footer/Footer.jsx';
-
+import {Contact} from './components/contact/Contact.jsx';
 
 // import CartContainer from './components/cart-container/CartContainer.jsx';
 
@@ -21,6 +21,7 @@ const App = () => {
         <Route path="/coffee" component={CoffeePage} />
         <Route path='/menu' component={Menu}/>
         <Route path='/aboutus' component={AboutUsPage} />
+        <Route path='/contact' component={Contact} />
       </Switch>
       <Footer />
       </div>

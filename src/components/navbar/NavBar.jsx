@@ -12,6 +12,7 @@ const NavBar = ({amount}) => {
                 <Link to="/coffee" className='link'>Coffee</Link>
                 <Link to='/menu' className='link'>Menu</Link>
                 <Link to="/aboutus" className='link'>About Us</Link>
+                <Link to='/contact' className='link'>Contact</Link>
                 {/* <span className='cart-show link'>
                 <Link to="/cart"><i className="fas fa-shopping-cart"></i></Link>
                 <span className='amount-container'> 

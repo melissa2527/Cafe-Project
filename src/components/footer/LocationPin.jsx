@@ -1,12 +1,14 @@
 import React from 'react';
+import {Marker} from 'google-maps-react';
 
-
-const LocationPin = ({text}) => {
+export const LocationPin = () => {
     return (
-        <div className="pin">
-            <p className="pin-text">{text}</p>
-      </div>
+        <>
+            <Marker 
+            position= {{
+                lat: 33.65886339847452,
+                lng: -118.00345439549712
+            }}/>
+        </>
     )
 }
-
-export default LocationPin

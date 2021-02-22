@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './footer.scss';
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import {LocationPin} from './LocationPin.jsx';
+import { Map, GoogleApiWrapper} from 'google-maps-react';
 import REACT_APP_GOOGLE_MAPS_API_KEY from '../../config.js';
 
 class MapItem extends Component{
@@ -18,6 +19,7 @@ render() {
                 zoom={15}
                 initialCenter={{ lat: 33.6595, lng: -117.9988}}
                 disableDefaultUI= {true}>
+                <LocationPin/>
             </Map>
         </div>
     );
