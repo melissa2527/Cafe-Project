@@ -50,13 +50,13 @@ export const Contact = () => {
             }
             <form className='contact-form' onSubmit={handleSubmit} data-aos='fade-up'>
                 <label>Name</label>
-                <input type='text' value={name} min-length='3' onChange={(e) => setName(e.target.value)} placeholder='name'required/>
+                <input type='text' minLength={3} value={name} min-length='3' onChange={(e) => setName(e.target.value)} placeholder='name'required/>
 
                 <label>Email</label>
-                <input type='text' value={email} onChange={(e) => setEmail(e.target.value)} id='email' placeholder='email'required/>
+                <input type='text' minLength={8} value={email} onChange={(e) => setEmail(e.target.value)} id='email' placeholder='email'required/>
 
                 <label>Message</label>
-                <textarea type='text' value={message} onChange={(e) => setMessage(e.target.value)} required/>
+                <textarea type='text' minLength={8} value={message} onChange={(e) => setMessage(e.target.value)} required/>
 
                 <button value='Submit' type='submit'>Submit</button>
             </form>
