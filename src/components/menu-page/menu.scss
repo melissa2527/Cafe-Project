@@ -6,8 +6,9 @@
 
         img {
             width: 200px;
-            // min-height: 350px;
+            min-height: 350px;
             margin-top: 7em;
+            margin-bottom: 1rem;
         }
 
         .menu-list-items {
@@ -18,7 +19,7 @@
 
 .menu-page {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     padding: 1rem 3rem;
 
     h1 {
@@ -35,7 +36,8 @@
         align-items: center;
 
         img {
-            min-height: 350px;
+            height: 500px;
+            box-shadow: 2px 2px 2px  rgb(43, 3, 13);
         }
 
         .menu-list-items {
@@ -44,6 +46,7 @@
             font-size: 1.5rem;
             line-height: 180%;
             width: 20rem;
+            height: 270%;
 
             .text {
                 text-decoration-style: dotted;
