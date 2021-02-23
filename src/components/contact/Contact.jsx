@@ -64,10 +64,10 @@ export const Contact = () => {
                 <input type='text' minLength={3} value={name} min-length='3' onChange={(e) => setName(e.target.value)} placeholder='name'required/>
 
                 <label>Email</label>
-                <input type='text' minLength={8} value={email} onChange={(e) => setEmail(e.target.value)} id='email' placeholder='email'required/>
+                <input type='email' minLength={8} value={email} onChange={(e) => setEmail(e.target.value)} id='email' placeholder='email'required/>
 
                 <label>Message</label>
-                <textarea type='text' minLength={8} value={message} onChange={(e) => setMessage(e.target.value)} required/>
+                <textarea minLength={8} value={message} onChange={(e) => setMessage(e.target.value)} required />
 
                 <button value='Submit' type='submit'>Submit</button>
             </form>
