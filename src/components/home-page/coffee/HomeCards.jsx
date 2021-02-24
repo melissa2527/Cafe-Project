@@ -17,7 +17,7 @@ export const HomeCards = () => {
     }
     return (
         <div className='coffee-container'>
-            <h3>Our Coffee</h3>
+            {/* <h3>Our Coffee</h3> */}
             {/* <Link to='/coffee' id='link-coffee'> <i class="fas fa-arrow-right"></i></Link> */}
             
             <button onClick={prevPicture} className='left-arrow'><i className="fas fa-arrow-left"></i></button>

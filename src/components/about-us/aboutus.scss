@@ -31,6 +31,13 @@
         h4 {
             margin: 1em;
         }
+
+        @media screen and (orientation: portrait) {
+            iframe {
+                width: 350px;
+                height: 180px;
+            }
+        }
     }
 }
 

@@ -1,3 +1,16 @@
+// @media only screen and (orientation: portrait) {
+//     .navbar-container {
+//         display: flex;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//     }
+
+//     .link {
+//         font-size: 0.8em;
+//         padding: 0.2em;
+//     }
+// }
+
 .navbar-container {
     width: 100vw;
     height: 10vh;
@@ -6,6 +19,12 @@
     justify-content: flex-end;
     box-shadow: 0 4px 2px 2px rgba(0,0,0,.2);
 
+    @media only screen and (orientation: portrait) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .link {
         color: whitesmoke;
         padding-right: 1.2em;
@@ -13,6 +32,11 @@
         padding-top: 1em;
         font-size: 1.2em;
         margin-top: -10px;
+
+        @media only screen and (orientation: portrait) {
+            font-size: 1em;
+            padding: 0.2em;
+        }
     }
 
     .link:hover {
@@ -43,14 +67,3 @@
     display: flex;
 }
 
-@media only screen and (max-width: 700px) {
-    .navbar-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .link {
-        font-size: 0.7em;
-        padding: auto;
-    }
-}

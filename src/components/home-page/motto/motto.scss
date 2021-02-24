@@ -59,7 +59,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (orientation: portrait) {
   .motto {
     display: flex;
     flex-direction: column;
@@ -77,11 +77,12 @@
   .row {
     max-height: 300px;
   }
+
   img {
-    max-height: 200px;
+    width: 20rem;
+    height: auto;
   }
   img-div {
-    margin: auto;
-    
+    overflow: hidden;
   }
 }

@@ -10,7 +10,7 @@ export const Footer = () => {
             <h2>Find Us</h2>
 
             <div className='footer-info'>
-                <MapItem/>
+                <MapItem className='map'/>
 
                 <div className='text'>
                     <div className='hours'> 

@@ -12,8 +12,7 @@ render() {
             position: "absolute",
             left: '20%',
             width: "25%",
-            height: "300px"}} 
-            className="map">
+            height: "300px"}} >
 
             <Map google={this.props.google} 
                 zoom={15}
