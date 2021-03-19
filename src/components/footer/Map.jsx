@@ -4,7 +4,6 @@ import {LocationPin} from './LocationPin.jsx';
 import { Map, GoogleApiWrapper} from 'google-maps-react';
 require('dotenv').config();
 console.log(process.env);
-// import REACT_APP_GOOGLE_MAPS_API_KEY from '../../config.js';
 
 class MapItem extends Component{
 
@@ -28,6 +27,5 @@ render() {
 
 
 export default GoogleApiWrapper({
-    apiKey: process.env.API_KEY
-    // apiKey: REACT_APP_GOOGLE_MAPS_API_KEY
+    apiKey: process.env.GOOGLE_MAPS_API_KEY
 })(MapItem);
