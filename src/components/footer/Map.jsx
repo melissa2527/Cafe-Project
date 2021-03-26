@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 import './footer.scss';
 import {LocationPin} from './LocationPin.jsx';
 import { Map, GoogleApiWrapper} from 'google-maps-react';
-require('dotenv').config();
-console.log(process.env);
+// import {GOOGLE_MAPS_API_KEY} from '../../config';
+// require('dotenv').config();
+// console.log(process.env);
 
 class MapItem extends Component{
 
@@ -27,5 +28,6 @@ render() {
 
 
 export default GoogleApiWrapper({
-    apiKey: process.env.GOOGLE_MAPS_API_KEY
+    // apiKey: process.env.GOOGLE_MAPS_API_KEY
+    apiKey: 'AIzaSyA9Eg0cXQUEzs6aA-0oOVmcrXW38HINliQ'
 })(MapItem);
